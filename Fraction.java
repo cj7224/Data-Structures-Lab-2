@@ -30,7 +30,7 @@ public class Fraction{
         System.out.println(gcd);
 
         if (x.getDenominator().equals(BigInteger.ONE)) {
-            throw new IllegalArgumentException ("demoninator can't be zero");
+            throw new IllegalArgumentException ("Denominator can't be zero.");
         }
 
         System.out.println(f.getNumerator());
@@ -42,7 +42,6 @@ public class Fraction{
 Fraction fkn2 = new Fraction(BigInteger.valueOf(0), BigInteger.valueOf(2));
 Fraction fkn3 = new Fraction(BigInteger.valueOf(-1), BigInteger.valueOf(2));
 Fraction fkn4 = new Fraction(BigInteger.valueOf(1), BigInteger.valueOf(2));
-//System.out.println(fkn);
 assert fkn.getNumerator().equals(BigInteger.ONE) : "num 1/2 == 1";
 assert fkn.getDenominator().equals(BigInteger.valueOf(2)) : "denom 1/2 == 2";
 assert fkn.getNumerator().add(fkn2.getNumerator()).equals(BigInteger.ONE) : "num 1/2 + 0/2 == 1";
